@@ -1,11 +1,9 @@
 ---
-title: "README_outline"
-#mainfont: DejaVu Sans
-subtitle: "Tutorial for creating a README.md"
+title: "Annimated Map of Average Minimum Wage in Canadian Provinces; 1965-2021"
+subtitle: 
 author: "Peter Stangolis"
 date: "June 14, 2021"
 output: 
-  #prettydoc::html_pretty:
   html_document:
     #theme: architect
     theme: simplex
@@ -30,15 +28,10 @@ a, a:hover{
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r today, include = FALSE}
-today <- format(Sys.Date(), "%B %d, %Y")
-print(today)
-```
 
-#### Other rmarkdown theme options
-* "cerulean", "journal", "flatly", "darkly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", "yeti"
 
 ### Today's date: **`r format(Sys.Date(), "%B %d, %Y")`**
+
 
 ### Table of Contents
   * [TITLES & INTERNAL TITLES](#titles)
@@ -46,29 +39,31 @@ print(today)
   * [TECHNOLOGIES](#technologies)
   * [LAUNCH](#launch)
 
-# 1. TITLES & INTERNAL TITLES
+# 1. Project Title
 
-* clearly explain what we have, usually project's name
-  * i.e. 'simple chat app created with Node.js, Socket.io and MongoDB'
+### Annimated Map of Average Minimum Wage in Canadian Provinces; 1965-2021
+* A map of Canada showing the Canadian provinces average minimum wage beginning in 1965 to 2021 progressing by intensity of color as
+minimum wage increases
+* created in RStudio with a focus on the **{tmap}** library
+
 
 # 2. INTRODUCTION
 
-* what is the projects aim - goal?
-* what does the project solve? 2-3 setences
-  * traing project? incentive
-  * why did you want to create it
-  * to learn a particular technology
-* shouldn't be too long
+* Incentive
+  * the incentive to complete this project was to improve my understanding of
+  mapping geospatial data in R, particularly using the **{tmap}** library
+  * also improve my understanding of creating projects and version control in R was a close second
+  * [tmap documentation](https://cran.r-project.org/web/packages/tmap/tmap.pdf)
+
 
 
 # 3. TECHNOLOGIES
 * write down the languages used, the libraries and versions
-  * Python 3.6
-  * R 4.01
-  * libraries
-    * readr
-    * ggplot2 1.0
-    * datapasta 0.1
+  * Language
+    * R version 4.0.5 (2021-03-31)
+  * Libraries
+    * datapasta 
+
 
 # 4. LAUNCH
 * how to run a project
@@ -99,28 +94,18 @@ print(today)
   * planned changes
   * direction of development
 
-### Sources
-* This project was inspired by: tutorial, video, blog
-  * link to source
-* Inspiration
-  * who inspired the project, what tutorial, list here
 
 ### Other Information
-* author
-* contact
+* Peter Stangolis
+* pstangolis@gmail.com
 * social media links
 * license under which the code is made available
-# How to write a README file
-
-<ul>
-  <li>The first file one should read when starting a new project</li>
-  <li>A good README is for other to understand what our code includes, and why it's noteworthy</li>
-</ul>
 
 
 
-## References for this README tutorial
 
-[Article 1 Link](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-<br>
-[Article 2 Link](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+
+## Sources
+
+* [Link to dataset](http://srv116.services.gc.ca/dimt-wid/sm-mw/rpt4.aspx?GoCTemplateCulture=en-CA)
+* 
